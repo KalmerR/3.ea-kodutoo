@@ -27,5 +27,32 @@ function showDate(){
     document.getElementById("Date").innerText = result;
 
 }
+
+function BGChanger() {}
+BGChanger.prototype = {
+    constructor: BGChanger,
+    index: 0,
+    urls: ['https://i.imgur.com/KPwiYiM.jpg', 'https://i.imgur.com/4K2lvjk.jpg', 'https://i.imgur.com/KuQejKW.jpg', 'https://i.imgur.com/nknZFlt.jpg',],
+    preload: function() {
+        for(var i in this.urls) {
+            var img = new Image();
+            img.src = this.urls[i];
+        }
+    },
+    changeBG: function () {
+        this.index = (this.index + 1) % this.urls.length;
+        console.log(this.urls[this.index]);
+        document.body.style.backgroundImage = "url(" + this.urls[this.index] + ")";
+        }
+    };
+
+    var bgChanger = new BGChanger();
+    setTimeout(bgChanger.preload.bind(bgChanger), 1);
+    function changeBackground(){
+        setInterval(bgChanger.changeBG.bind(bgChanger), 30000);
+        bgChanger.changeBG();
+    }
+
     showDate();
     showTime();
+    setInterval(bgChanger.changeBG.bind(bgChanger), 30000);
