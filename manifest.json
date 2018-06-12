@@ -3,10 +3,10 @@
     "version": "1",
     "description": "New fancy tab with clock",
     "browser_action":{
-        "default_icon": "images/icon.png"
+        "default_icon": "icon.png"
     },
     "chrome_url_overrides":{
-        "newtab": "newTab.html"
+        "newtab": "index.html"
     },
     "manifest_version": 2
 } 
