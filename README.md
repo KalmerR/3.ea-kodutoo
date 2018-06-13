@@ -1,20 +1,22 @@
 # 3. kodutöö – Chrome extension
+Fancy tab
 
-Kodutööna peab looma Chrome extension'i selliselt, et nõuded oleksid täidetud. Soovi korral võib ka teha Firefox'ile.
+## Eesmärk
+Teha ilusamaks ja meeldivamaks kasutaja poolt avatud vaheleht.
 
-**Töö on soovitatav teha kahekesi!**
+## Funksionaalsus
+1. Digitaalne kell 
+1. Kuvatakse kuupäev, nädalapäev ja aasta
+1. Tagataustal mängib kindel YouTube's olev playlist.
+1. Vahetuv taustapilt
+    - taustapilt vahetub ise peale kindlat aega.
+1. Klikitavad ikooni (veidi ebakorrapäraselt paigutatud).
+    - Facebook
+    - GitHub
+    - YouTube
+    - Google
 
-## Nõuded
+## Kasutatud viited ja inspiratsioon
 
-1. Kirjelda README.md failis, mida rakendus teeb. 
-1. Rakendus peab tegema külastatava veebilehe/veebirakenduse kas ilusamaks, mugavamaks või huvitamaks.
-1. Peab oleama piisavalt keerukas (midagi enemat kui tunnis tegmine)
-1. Ole loominguline, näiteks põnevad asjad millele saab brauser ligi, kuid nendega on keeruline toimetada.
-    - bluetooth, sh pulsivöö [dokumentatsioon](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
-    - mikrofon [näide](https://www.talater.com/annyang/)
-    - webcam [näide](https://revealjs.herokuapp.com/#/0/1)
-
-## Täiendav abimaterjal
-
-* Chrome extension API [JavaScript APIs](https://developer.chrome.com/extensions/api_index/)
-* Chrome extension'ite näited [Sample Extensions](https://developer.chrome.com/extensions/samples/)
+* Inspiratsiooni sain oma esimese kodutöö pealt- leidsin, et miks mitte teha Google Chrome extension, mis muudaks vahelehe ilusamaks.
+* https://www.youtube.com/watch?v=qvypCd2Vl4s
